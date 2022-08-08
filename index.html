@@ -8,8 +8,61 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="tailwind.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <!-- nav container -->
+    <nav class="relative container mx-auto p-6">
+        <!-- flex container for all items -->
+        <div class="flex items-center justify-between">
+            <!-- flex container for logo/menu -->
+            <div class="flex items-center space-x-20">
+                <!-- logo -->
+                <img src="images/logo.svg" alt="">
+                <!-- left menu -->
+                <div class="hidden space-x-8 font-bold lg:flex">
+                    <a href="" class="text-grayishViolet hover:text-veryDarkViolet">Features</a>
+                    <a href="" class="text-grayishViolet hover:text-veryDarkViolet">Pricing</a>
+                    <a href="" class="text-grayishViolet hover:text-veryDarkViolet">Resources</a>
+                </div>
+            </div>
+
+            <!-- right buttons menu -->
+            <div class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
+                <div class="hover:text-veryDarkVilet">Login </div>
+                <a href="#" class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70">Sign Up</a>
+            </div>
+            <!-- desktop menu -->
+        </div>
+        <!-- mobile menu -->
+    </nav>
+
+    <!-- hero section -->
+    <section id="hero">
+        <!-- hero container -->
+        <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+            <!-- content container -->
+            <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
+                <h1 class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left">
+                    More than just shorter links
+                </h1>
+                <p class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+                </p>
+                <div class="mx-auto lg:mx-0">
+                    <a href="#" class="py-5 px-10 text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+            <!-- image -->
+            <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+                <img src="images/illustration-working.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- shorten section -->
 </body>
 </html>
